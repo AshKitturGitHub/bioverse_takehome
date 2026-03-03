@@ -107,20 +107,4 @@ Open: `http://localhost:3000`
 - `user2 / password123` (USER)
 - `admin / admin123` (ADMIN)
 
-## API Endpoints
 
-- `GET /api/health`
-- `POST /api/login`
-- `GET /api/questionnaires`
-- `GET /api/questionnaires/:id/questions?username=<username>`
-- `POST /api/questionnaires/:id/submit`
-- `GET /api/admin/users`
-- `GET /api/admin/users/:username/responses`
-
-## Demo Checklist
-
-1. Log in as `user1`
-2. Complete and submit one questionnaire
-3. Log out and log in as `admin`
-4. Open `user1` row in admin panel
-5. Confirm Q/A responses appear in modal
