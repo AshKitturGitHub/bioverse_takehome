@@ -102,7 +102,7 @@ app.get("/api/questionnaires/:id/questions", async (req, res) => {
       name: questionnaire.name,
     },
     questions: questionnaire.questionnaireQuestions.map(
-      (item: { question: { id: number; type: string; prompt: string; options: Prisma.JsonValue | null; allowsMultiple: boolean }; priority: number }) => ({
+      (item: { question: { id: number; type: string; prompt: string; options: unknown; allowsMultiple: boolean }; priority: number }) => ({
       questionId: item.question.id,
       type: item.question.type,
       prompt: item.question.prompt,
